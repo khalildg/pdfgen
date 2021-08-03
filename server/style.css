@@ -1,0 +1,63 @@
+.title {
+  color: red;
+  text-align: center;
+  font-size: 100%;
+}
+
+body {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.titre {
+  color: red;
+  text-align: center;
+  font-size: 12;
+  background-color: rgb(212, 211, 211);
+}
+
+.text {
+  text-align: center;
+  font-family: Georgia;
+}
+
+.tableau {
+  width: 50%;
+  margin-bottom: 1rem;
+  color: #212529;
+  margin-left: 20%;
+}
+.tableau th,
+.tableau td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.tableau thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #000000;
+}
+
+.tableau tbody + tbody {
+  border-top: 2px solid #000000;
+}
+
+.tableau-sm th,
+.tableau-sm td {
+  padding: 0.3rem;
+}
+
+.tableau {
+  border: 1px solid #000000;
+}
+
+.tableau th,
+.tableau td {
+  border: 1px solid #000000;
+}
+
+.tableau thead th,
+.tableau thead td {
+  border-bottom-width: 2px;
+}

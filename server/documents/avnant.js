@@ -1,0 +1,453 @@
+module.exports =
+({rs,periode,engagement,siren,num,rue,codePostal,ville,contratRef,commentaire,nomPrenom,fonction,phone,mail}) => {
+const today = new Date();
+return `
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <script>
+
+
+
+    window.onload = function test() {
+
+
+      var en = (document.getElementById('choix1'));
+      var en1 = (document.getElementById('choix2'));
+
+
+      if (${ engagement } == "oui") {
+        en.checked = true;
+      }else if (${ engagement } == "non") {
+        en1.checked = true
+      }
+    }
+
+
+  </script>
+  <title>Document</title>
+
+
+  <style>
+    body {
+      margin-top: 30px;
+      margin-right: 30px;
+      margin-bottom: 10px;
+      margin-left: 30px;
+    }
+
+    table,
+    td,
+    th {
+      border: 1px solid black;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .title {
+      color: red;
+      text-align: center;
+      font-size: 12px;
+      width: 70%;
+      font-family: Arial;
+    }
+
+    img {
+      width: 150%;
+      max-width: 200px
+    }
+
+    .tdtitre {
+      height: 30px;
+    }
+
+    .thtitre1 {
+      width: 30%;
+      font-size: 12px;
+    }
+
+    .titre {
+      color: red;
+      text-align: center;
+      font-size: 12;
+      background-color: rgb(212, 211, 211);
+      padding: auto;
+
+    }
+
+    .table {
+      padding-top: 20px;
+      font-family: malgun gothic;
+      font-size: 8px
+    }
+
+    .tableau {
+      width: 50%;
+      margin-bottom: 1rem;
+      color: #212529;
+      margin-left: 20%;
+    }
+
+    .text {
+      text-align: center;
+      font-family: Georgia;
+      font-size: 7px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: #2196F3;
+      padding: 10px;
+    }
+
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .no-outline {
+      outline: none;
+      border: 0px solid;
+      font-size: 7.5px;
+      font-family: Arial;
+    }
+
+    .temp {
+      border: none;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <div>
+
+    <table>
+      <tr>
+        <th class="thtitre1"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Logo_SFRBusiness.jpg">
+          <p style="font-size:7.5px;font-family: malgun gothic;">SFR Business, marque du groupe SFR,<br> est à
+            destination des entreprises</p>
+        </th>
+        <th class="title">
+          <p>Migration de l’offre ligne Fax de Pack Business Entrepreneurs</p>
+          <p>vers l’offre SFR Business Ligne analogique VGA </p>
+          <br>
+          <p>Avec ou sans évolution tarifaire </p>
+        </th>
+      </tr>
+      <tr>
+        <td class="tdtitre"></td>
+        <td class="tdtitre"></td>
+      </tr>
+    </table>
+  </div>
+  <p style="font-weight: bold ; font-size:10px">Le Présent avenant est conclu entre : </p>
+
+  <table class="titre">
+    <tr>
+      <th>Le Client</th>
+    </tr>
+  </table>
+  <br>
+
+
+
+
+
+
+
+
+  <table class="table">
+    <tr>
+
+      <th>Dénomination sociale</th>
+      <th>Raison Sociale </th>
+      <td>${rs}</td>
+      <th>SIREN</th>
+      <td>${siren}</td>
+
+    </tr>
+    <tr>
+
+      <td></td>
+      <th>Forme juridique</th>
+      <td></td>
+      <th>RCS</th>
+      <td></td>
+
+    </tr>
+    <tr>
+
+      <th>Adresse du siège</th>
+      <th>N°</th>
+      <td>${num}</td>
+      <th>Rue</th>
+      <td>${rue}</td>
+
+    </tr>
+    <tr>
+      <td></td>
+      <th>Code Postal</th>
+      <td>${codePostal}</td>
+      <th>ville</th>
+      <td>${ville}</td>
+
+    </tr>
+
+
+  </table>
+  <br>
+
+  <table class="titre">
+    <tr>
+      <th>Et SFR</th>
+    </tr>
+  </table>
+  <br>
+
+  <table class="table">
+    <tbody>
+      <tr>
+
+        <th rowspan="2"> Dénomination sociale</th>
+        <th> Raison Sociale </th>
+        <td> SFR</td>
+        <th> SIREN</th>
+        <td> 343 059 564 </td>
+
+      </tr>
+    </tbody>
+    <tbody>
+      <tr>
+
+        <td></td>
+        <th> Forme juridique</th>
+        <td> S.A. au capital de 3 423 265 598,40 euros </td>
+        <th> RCS</th>
+        <td> Paris</td>
+
+      </tr>
+      <tr>
+
+        <td></td>
+        <th> TVA</th>
+        <td colspan="3"> FR 71 343 059 564 - mars 2012 </td>
+
+
+      </tr>
+      <tr>
+
+        <th> Adresse du siège</th>
+        <th> N°</th>
+        <td> 16</td>
+        <th> Rue</th>
+        <td> Rue du Général Alain de Boissieu</td>
+
+      </tr>
+      <tr>
+        <td></td>
+        <th> Code Postal</th>
+        <td> 75015</td>
+        <th> ville</th>
+        <td> Paris</td>
+
+      </tr>
+
+    </tbody>
+  </table>
+  <br>
+  <table class="titre">
+    <tr>
+      <th>Préambule</th>
+    </tr>
+  </table>
+  <p style="font-size:10px">SFR et le Client ont signé un contrat référencé relatif à la fourniture du Service lien
+    Ligne Fax de son offre Pack Business Entrepreneurs. </p>
+
+
+  <table class="table">
+    <tbody>
+      <tr>
+
+        <th style="text-align: center;" style="width:30%">Contrat référencé</th>
+        <td style="width:20%">${contratRef}</td>
+        <th style="text-align: center;" style="width:30%">Date de signature du contrat</th>
+        <td style="width:20%"></td>
+
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <table class="titre">
+    <tr>
+      <th>Période minimale d’engagement</th>
+    </tr>
+  </table>
+
+  <p style="font-family: Arial; font-size : 12px;">Le présent Avenant a pour objet le réengagement de chacun des Accès
+    et/ou Lignes pour une nouvelle Période Minimale d’Engagement à compter
+    de la date d’entrée en vigueur du présent Avenant (une seule case à cocher) :</p>
+  <input type="checkbox" id="check1" value="24"> <label style="font-size:11px">24 mois ‐</label> </input>
+  <input type="checkbox" id="check2" value="36"> <label style="font-size:11px">36 mois ‐</label> </input>
+  <input type="checkbox" id="check3" value="48"> <label style="font-size:11px">48 mois</label> </input>
+  <p style="font-family: Arial; font-size : 12px;">Ce réengagement est assorti de nouvelles conditions tarifaires (une
+    seule case à cocher) : </p>
+  <input type="checkbox" id="choix1" value="oui"> <label style="font-size:10px"> OUI ‐ </label> </input>
+  <input type="checkbox" id="choix2" value="non"><label style="font-size:10px">NON</label></input>
+  <br>
+  <br>
+
+  <table class="titre">
+    <tr>
+      <th>Conditions tarifaires</th>
+    </tr>
+  </table>
+  <p style="font-family: Arial; font-size : 12px;">Dans le cas de réengagement avec évolutions tarifaires, les
+    Conditions Tarifaires du Contrat sont supprimées et
+    remplacées par celles annexées
+    au présent Avenant.</p>
+  <p style="font-family: Arial; font-size : 12px;">Ces nouvelles Conditions Tarifaires seront applicables dans un délai
+    de trente (30) jours suivant la date
+    d’entrée en vigueur du présent Avenant. </p>
+
+  <table class="titre">
+    <tr>
+      <th>ACCORD DES PARTIES (fait en 2 exemplaires) </th>
+    </tr>
+  </table>
+  <p style="font-family: Arial; font-size : 12px;">
+    Le présent Avenant entre en vigueur à compter de la date de signature par les parties.
+    Les autres dispositions du Contrat non modifiées par le présent Avenant demeurent inchangées et de plein effet.
+  </p>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p style="font-size:6.5px;font-family:corbel">SFR - 16 rue du Général Alain de Boissieu 75015 PARIS- SA au capital de
+    3 423 265 598,40 euros - RCS Paris 343 059 564 - N° TVA FR 71 343 059 564 – Bon de Commande Ligne Business IP </p>
+  <br>
+  <br>
+  <table>
+    <tr>
+      <th class="thtitre1"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Logo_SFRBusiness.jpg">
+        <p style="font-size:7.5px;font-family: malgun gothic;">SFR Business, marque du groupe SFR,<br> est à destination
+          des entreprises</p>
+      </th>
+      <th class="title">
+        <p>Migration de l’offre data de Pack Business Entrepreneurs</p>
+        <p>vers l’offre Accès Max</p>
+        <p>(anciennement dénommées 9dsl, 9dsl+, SFR DSL, SFR DSL+)</p>
+      </th>
+    </tr>
+    <tr>
+      <td class="tdtitre"></td>
+      <td class="tdtitre"></td>
+    </tr>
+  </table>
+
+  <br>
+  <br>
+
+
+  <textarea style="width: 100%; height: 120px;" placeholder="Commentaires :">${commentaire}</textarea>
+  <br>
+  <br>
+
+
+
+
+  <table class="temp">
+    <tbody>
+      <tr class="temp" style="width:50%">
+
+        <th style="text-align: left;width:50%; font-size:9px;" class="temp"><label>Pour le Client, signataire dûment
+            habilité </label></th>
+        <th style="text-align: left;width:50%; font-size:9px;" class="temp"><label>Pour SFR,</label></th>
+
+
+      </tr>
+    </tbody>
+
+
+    <tbody>
+
+      <tr class="temp">
+
+
+        <td rowspan="5" class="temp">
+          <table class="temp">
+            <tr class="temp">
+              <td rowspan="5" class="temp">
+                <p><label style="font-size : 7.5px; font-family: Arial">Nom/Prénom :</label><input class="no-outline"
+                    type="text" value=" ${nomPrenom}"></p>
+                <p><label style="font-size : 7.5px; font-family: Arial">Fonction :</label><input type="text"
+                    class="no-outline" value=" ${fonction}"></p>
+                <p><label style="font-size : 7.5px; font-family: Arial">Téléphone :</label><input type="text"
+                    class="no-outline" value=" ${phone}"></p>
+                <p><label style="font-size : 7.5px; font-family: Arial">E-Mail :</label><input type="text"
+                    class="no-outline" value=" ${mail}"></p>
+              </td>
+              <td rowspan="5" class="temp"><textarea
+                  style="height:100px;font-size: 7px;width:100px">Signature et Cachet commercial</textarea>
+              </td>
+            </tr>
+          </table>
+          <table class="temp">
+            <tr class="temp">
+              <td class="temp"><label style="font-size : 7.5px; font-family: Arial">Fait à :</label><input type="text"
+                  class="no-outline" value=" ${ville}"></td>
+              <td class="temp"><label style="font-size : 7.5px; font-family: Arial">Date :</label><input type="text"
+                  class="no-outline" value=" ${`${today.getDate()}. ${today.getMonth() + 1}. ${today.getFullYear()}.`}">
+              </td>
+            </tr>
+          </table>
+
+        </td>
+        <td rowspan="5" class="temp">
+          <table class="temp">
+            <tr class="temp">
+              <td rowspan="5" class="temp" style="width:60%">
+                <p><label style="font-size : 7.5px; font-family: Arial">Nom : </label></p>
+                <p><label style="font-size : 7.5px; font-family: Arial">Prénom : </label></p>
+                <p><label style="font-size : 7.5px; font-family: Arial">Téléphone : </label></p>
+                <p><label style="font-size : 7.5px; font-family: Arial">E-Mail : </label></p>
+                <p><label style="font-size : 7.5px; font-family: Arial">Faite à : </labe>
+                </p>
+              </td>
+              <td rowspan="5" class="temp"><textarea
+                  style="height:100px;font-size: 7px;width:100px ;">Signature et Cachet commercial</textarea>
+              </td>
+            </tr>
+          </table>
+        </td>
+
+
+      </tr>
+      <tr class="temp"> </tr>
+      <tr class="temp"> </tr>
+      <tr class="temp"> </tr>
+
+    </tbody>
+  </table>
+  </table>
+
+
+</body>
+
+</html>
+`;
+};
